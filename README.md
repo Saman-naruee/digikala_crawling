@@ -1,76 +1,56 @@
-Crawling Project: Digikala Crawling
-This project is a web scraper designed to extract product information from the Digikala website. The main goal is to collect specific data from product pages for analysis and review.
+# Digikala Crawling Project
 
-🚀 Features
-Extracts key product information (name, price, discount, seller).
+A web crawler designed to extract detailed product information from the Digikala website for analysis and review.
 
-Ability to navigate through different category pages.
+## 🚀 Features
 
-Stores extracted data in various formats (e.g., CSV, JSON).
+- Extracts product details: name, price, discount, seller, and more.
+- Navigates category pages and explores deep product listings.
+- Stores results in multiple formats (CSV, JSON).
+- Resilient scraping with error handling and retry logic.
 
-(Optional) Error Handling and Retries.
+## 🛠️ Technologies & Libraries
 
-🛠️ Technologies Used
-In this section, list the technologies and libraries you have used in your project. For example:
+- **Programming Language:** Python 3.x
+- **Scraping Libraries:** (Scrapy, Beautiful Soup, Selenium, Requests)
+- **Data Handling:** Pandas
+- **Virtual Environment:** venv or conda
 
-Programming Language: Python 3.x
+## ⚙️ Installation
 
-Main Scraping Library: (e.g., Scrapy, Beautiful Soup, Selenium, Requests)
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Saman-naruee/digikala_crawling.git
+   cd digikala_crawling
+   ```
+2. **Create and activate a virtual environment:**
+   ```bash
+   python -m venv venv
+   # Windows:
+   venv\Scripts\activate
+   # macOS/Linux:
+   source venv/bin/activate
+   ```
+3. **Install dependencies:**
+   > Ensure you have a `requirements.txt` file listing necessary libraries.
+   ```bash
+   pip install -r requirements.txt
+   ```
+   If using Selenium, download the appropriate WebDriver for your browser.
 
-Data Handling Library: (e.g., Pandas)
+## ▶️ Usage
 
-Virtual Environment: (e.g., venv, conda)
+- For a simple Python script:
+  ```bash
+  python src/main.py
+  ```
+- For a Scrapy project:
+  ```bash
+  scrapy crawl digikala_spider -o output.csv
+  ```
+- Adjust input arguments or configuration files as needed (see code comments for details).
 
-⚙️ Installation and Setup
-To run this project locally, follow these steps:
-
-Clone the repository:
-
-```bash
-git clone https://github.com/Saman-naruee/digikala_crawling.git
-cd digikala_crawling
-```
-
-Create and activate a virtual environment:
-
-```bash
-python -m venv venv
-
-On Windows
-venv\Scripts\activate
-
-On macOS/Linux
-source venv/bin/activate
-```
-
-Install dependencies:
-Create a file named requirements.txt and list the project's libraries in it. Then, install them using the following command:
-
-```bash
-pip install -r requirements.txt
-```
-
-If you are using a library like Selenium, be sure to mention the installation of the WebDriver for your browser as well.
-
-▶️ How to Run
-In this section, explain how the user should run your script.
-
-Example for a simple Python script:
-
-```bash
-python main.py
-```
-
-Example for Scrapy projects:
-
-```bash
-scrapy crawl digikala_spider -o output.csv
-```
-
-Mention any input arguments or specific configurations required to run the project here.
-
-🗂️ Project Structure
-Display the overall structure of your project files and folders to help others understand your code more easily.
+## 🗂️ Project Structure
 
 ```
 digikala_crawling/
@@ -85,9 +65,17 @@ digikala_crawling/
 │   └── utils.py
 │
 └── data/
-└── (Output files are stored here)
+    └── (Output files)
 ```
 
-🤝 Contributing
-If you would like to contribute to this project, please submit a Pull Request. We welcome any collaboration.
+## 🤝 Contributing
 
+Contributions are welcome! Please fork the repo, create your feature branch, and submit a Pull Request. For major changes, open an issue first to discuss what you would like to change.
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## 📝 Contact
+
+For questions or suggestions, open an issue or reach out via GitHub.
